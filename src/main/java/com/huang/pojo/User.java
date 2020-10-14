@@ -1,6 +1,7 @@
 package com.huang.pojo;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class User {
     private Integer id; //主键ID
@@ -9,13 +10,13 @@ public class User {
     private String userPassword; //用户密码
     private Integer gender; //性别
     private Date birthday;//出生日期
-    private Integer phone;//手机
+    private String phone;//手机
     private String address;//地址
     private Integer userRole;//用户角色
     private Integer createdBy;//创建者
-    private Date creationDate;//创建时间
+    private Timestamp creationDate;//创建时间
     private Integer modifyBy;//更新者
-    private Date modifyDate;//更新时间
+    private Timestamp modifyDate;//更新时间
 
     public Integer getId() {
         return id;
@@ -53,7 +54,7 @@ public class User {
         return gender;
     }
 
-    public void setGender(Integer gender) {
+    public void setGender(int gender) {
         this.gender = gender;
     }
 
@@ -65,11 +66,11 @@ public class User {
         this.birthday = birthday;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -97,11 +98,11 @@ public class User {
         this.createdBy = createdBy;
     }
 
-    public Date getCreationDate() {
+    public Timestamp getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Date creationDate) {
+    public void setCreationDate(Timestamp creationDate) {
         this.creationDate = creationDate;
     }
 
@@ -113,11 +114,11 @@ public class User {
         this.modifyBy = modifyBy;
     }
 
-    public Date getModifyDate() {
+    public Timestamp getModifyDate() {
         return modifyDate;
     }
 
-    public void setModifyDate(Date modifyDate) {
+    public void setModifyDate(Timestamp modifyDate) {
         this.modifyDate = modifyDate;
     }
 }
