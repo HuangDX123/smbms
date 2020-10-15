@@ -67,7 +67,7 @@ public class BaseDao {
     }
 
     //增删改公共方法
-    public static int execute(Connection connection, String sql, Object[] params, PreparedStatement preparedStatement) throws SQLException {
+    public static int execute(Connection connection, PreparedStatement preparedStatement, String sql, Object[] params) throws SQLException {
         preparedStatement = connection.prepareStatement(sql);
 
         for (int i = 0; i < params.length; i++) {
